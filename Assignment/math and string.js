@@ -1,0 +1,53 @@
+// function getpizzacount(guest){
+// let getslice = 3
+// let slice = 8;
+// let res = (getslice/slice)*guest;
+// return Math.ceil(res);
+// }
+// const guestinvited = 12;
+// const pizzatobeordered = getpizzacount(guestinvited);
+// console.log(pizzatobeordered)
+
+
+
+function checklower(string){
+    return string.toLowerCase()
+};
+
+function checkremove(string){
+    return string.replaceAll(' ','')
+};
+
+function checkincludes(string){
+    return string.includes('JavaScript')
+};
+
+function checkreplace(string){
+    return string.replaceAll('e','x')
+};
+
+function checklatter(string){
+    
+    
+    return string.split('a').length-1;
+};
+
+console.log(checklower('JavaScript is an excellent programing language'));
+console.log(checkremove('JavaScript is an excellent programing language'));
+console.log(checkincludes('JavaScript is an excellent programing language'));
+console.log(checkreplace('JavaScript is an excellent programing language'));
+console.log(checklatter('JavaScript is an excellent programing language'));
+
+
+////alternet 
+
+function check(string){
+    let result = {}
+    result.l = string.toLowerCase()
+    result.n = string.replaceAll(' ','')
+    result.cont = string.includes('JavaScript')
+    result.rep = string.replaceAll('e','x')
+    result.s = string.split('a').length-1;
+    return result
+};
+console.log(check('JavaScript is an excellent programing language'));

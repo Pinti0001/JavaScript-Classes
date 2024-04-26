@@ -1,0 +1,23 @@
+let sum = 0
+for(let x = 1;x<=20;x++){
+    if (x%2===0){
+        sum+=x; 
+    }
+}
+console.log(sum)
+
+let i = 5;
+let count = 0;
+while(i<=12){
+    if(i%2!=0){
+        count++; 
+    }
+    i++
+}
+console.log(count)
+
+
+let arr = ['Alice','Bob','Charlie','David','Eve'];
+for (x in arr){
+    console.log('index',x,':',arr[x])
+}
